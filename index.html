@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <img src="logo.png" height="50px" />
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="Joker.html">Joker</a></li>
+            <li><a href="About.html">About Us</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+
+    <section class="home">
+      <p
+        style="
+          font-family: 'Lobster', cursive;
+          font-size: 70px;
+          position: absolute;
+          top: 390px;
+          left: 100px;
+        "
+      >
+        Even though you're growing up,you should never stop laughing
+      </p>
+    </section>
+    <div style="height: 210px">
+      <!-- just to make scrolling effect possible -->
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="man1.jpg" alt="Snow" style="width: 100%" />
+        <div class="overlay">
+          <p>
+            Today at the bank , and old lady asked me to help check her
+            balance<br />
+            <i>~ So i pushed her over</i>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="women1.jpg" alt="Forest" style="width: 100%" />
+        <div class="overlay">
+          <p>
+            Why did the golfer bring two pairs of pants?<br />
+            <i>~ In case he got a hole in one </i>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="man2.jpg" alt="Mountains" style="width: 100%" />
+        <div class="overlay">
+          <p>
+            The other day, my wife asked me to pass her a lipstick but <br />~
+            <i>I accidentally passed her a glue stick</i> <br />
+            She still isn't talking to me
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © 2022 SARCASM.All rights reserved.To the owners of the
+        site-Prakhar,Vasudev,Aditya and Aryan. Any issues about the content can
+        contact us. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+    </script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
